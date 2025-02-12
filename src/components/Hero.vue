@@ -4,10 +4,16 @@
       <div
         class="px-5 py-5 container filt size text-center text-lg-start d-flex align-items-center"
       >
-        <h1 class="display-5 fw-bold lh-2 text-white align-bottom">
-            {{ $t("HeroH1P1") }}<br />
-            {{ $t("HeroH1P2") }}
-          </h1>
+        <h1 class="container display-5 lh-2 text-white align-bottom">
+          {{ $t("HeroH1P1") }}<br />
+          {{ $t("HeroH1P2") }}
+        </h1>
+        <img
+          v-if="isMdOrLarger"
+          class="logo w-25 p-5"
+          src="../assets/jihc-logo.png"
+          alt="Logo"
+        />
       </div>
     </div>
   </section>
@@ -17,6 +23,27 @@
 export default {
   components: {},
   // Component logic goes here
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    };
+  },
+  computed: {
+    isMdOrLarger() {
+      return this.windowWidth >= 768; // Show only for md and larger
+    },
+  },
+  mounted() {
+    window.addEventListener("resize", this.updateWindowWidth);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.updateWindowWidth);
+  },
+  methods: {
+    updateWindowWidth() {
+      this.windowWidth = window.innerWidth;
+    },
+  },
 };
 </script>
 
@@ -32,7 +59,6 @@ export default {
 .filt {
   backdrop-filter: blur(4px);
   max-width: 1800px;
-
 }
 
 .overlay {
@@ -41,8 +67,8 @@ export default {
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.3)
+    rgba(67, 117, 147, 0.307),
+    rgba(0, 0, 0, 0.394)
   ); /* Adjust the opacity by changing the alpha values */
   top: 0;
   left: 0;

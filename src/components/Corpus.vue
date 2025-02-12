@@ -108,7 +108,7 @@
         aria-current="true"
       ></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner rounded">
       <div class="carousel-item active crs-img-1"></div>
       <div class="carousel-item crs-img-2"></div>
       <div class="carousel-item crs-img-3"></div>
@@ -175,7 +175,11 @@
   <!-- HTML with Bootstrap classes -->
 
   <div class="container position-relative p-0 text-center map2 mt-5" style="">
-    <img src="../assets/map2.png" alt="College Overview" class="img-fluid" />
+    <img
+      src="../assets/map2.png"
+      alt="College Overview"
+      class="img-fluid rounded-5"
+    />
     <router-link
       to="/sporthall"
       exact

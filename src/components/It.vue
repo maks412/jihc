@@ -107,31 +107,31 @@
         <hr />
       </h1>
 
-      <div class="row align-items-center gap-5">
+      <div class="row align-items-center justify-content-center gap-5">
         <div
-          class="col d-flex flex-column gap-1 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Itcard1.png" alt="" /></i>
-          <p class="fw-medium">{{ $t("ItCard1") }}</p>
+          <p class="fw-medium mt-2">{{ $t("ItCard1") }}</p>
         </div>
         <div
-          class="col d-flex flex-column gap-2 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Itcard2.png" alt="" /></i>
-          <p class="fw-medium">{{ $t("ItCard2") }}</p>
+          <p class="fw-medium mt-2">{{ $t("ItCard2") }}</p>
         </div>
         <div
-          class="col d-flex flex-column gap-2 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Itcard3.png" alt="" /></i>
-          <p class="fw-medium">{{ $t("ItCard3") }}</p>
+          <p class="fw-medium mt-2">{{ $t("ItCard3") }}</p>
         </div>
         <div
-          class="col d-flex flex-column gap-2 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Itcard4.png" alt="" /></i>
 
-          <p class="fw-medium">{{ $t("ItCard4") }}</p>
+          <p class="fw-medium mt-2">{{ $t("ItCard4") }}</p>
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
 <template>
   <nav
-    class="navbar bg-primary navbar-expand-lg d-none d-lg-block d-xl-block d-xxl-block rounded-bottom-4"
+    class="navbar bg-primary navbar-expand-lg d-none d-lg-block d-xl-block d-xxl-block"
     data-bs-theme="dark"
   >
-    <div class="container-fluid container">
+    <!-- <div class="container-fluid container">
       <button
         class="navbar-toggler"
         type="button"
@@ -51,7 +51,7 @@
           {{ $t("NavbarP1") }}
         </a>
       </div>
-    </div>
+    </div> -->
   </nav>
 </template>
 

@@ -96,6 +96,8 @@ export default {
   ComandP58: "Воспитатель",
 
   NewsH: "Новости",
+  hide: "Скрыть",
+  readMore: "Подробнее",
   // AsocPage Texts
   LifePage: {
     title: "Студенческая жизнь",
@@ -517,11 +519,14 @@ export default {
   ProfessionDesP10: "Разработка приложений (Application development)",
   ProfessionDesP11: "Графический дизайн (Graphic Design)",
   ProfessionDesP12: "Менеджмент в IT (IT Management)",
+  ProfessionDesP12_1: "Web Разработка (Web Development)",
+
 
   ProfessionDesP13: "Программистом (Java, Python)",
   ProfessionDesP14: "Разработчиком сайтов (Full Stack)",
   ProfessionDesP15: "Дизайнером (Graphic, UX/UI, 3D)",
   ProfessionDesP16: "Руководителем проекта (Project Manager)",
+  ProfessionDesP16_1: "Разработчиком мобильных приложении (Mobile Application)",
 
   ProfessionDesP17: "ПРОДОЛЖИТЕЛЬНОСТЬ ОБУЧЕНИЯ 2 года и 10 месяцев",
   ProfessionDesP18: "СТОИМОСТЬ ОБУЧЕНИЯ Грант (отбор ведется строго смотря на аттестат за 9 класс)",

@@ -96,6 +96,9 @@ ComandPage: {
   
   // News Page Text
 NewsH: "News",
+// {{ item.isFullTextVisible ? $t("hide") : $t("readMore") }}
+hide: "Hide",
+readMore: "Read More",
 
 // Life Page Texts
 LifePage: {

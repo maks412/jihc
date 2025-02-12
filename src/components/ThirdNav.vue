@@ -1,10 +1,10 @@
 <template>
   <nav
-    class="navbar navbar-expand-lg rounded-top-4"
+    class="navbar navbar-expand-lg"
     aria-label="Twelfth navbar example"
     data-bs-theme="dark"
   >
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <button
         class="navbar-toggler"
         type="button"
@@ -18,7 +18,7 @@
       </button>
 
       <div
-        class="collapse navbar-collapse justify-content-md-center"
+        class="collapse navbar-collapse d-flex justify-content-around"
         id="navbarsExample10"
       >
         <ul class="navbar-nav">

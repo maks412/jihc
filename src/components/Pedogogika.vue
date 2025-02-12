@@ -7,7 +7,7 @@
         <h3 style="color: #0077ff">{{ $t("PedogogikaMathH1") }}</h3>
         <hr />
         <p class="">
-        {{ $t("PedogogikaMathP1") }}
+          {{ $t("PedogogikaMathP1") }}
         </p>
         <ul
           class="navbar-nav justify-content-end flex-grow-1 pe-3 align-self-center d-flex"
@@ -81,27 +81,27 @@
         <hr />
       </h1>
 
-      <div class="row align-items-center gap-5">
+      <div class="row align-items-center justify-content-center gap-5">
         <div
-          class="col d-flex flex-column gap-1 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Pedogogikacard1.png" alt="" /></i>
           <p class="fw-medium">{{ $t("PedogogikaMathP6") }}</p>
         </div>
         <div
-          class="col d-flex flex-column gap-2 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Pedogogikacard2.png" alt="" /></i>
           <p class="fw-medium">{{ $t("PedogogikaMathP7") }}</p>
         </div>
         <div
-          class="col d-flex flex-column gap-2 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Pedogogikacard3.png" alt="" /></i>
           <p class="fw-medium">{{ $t("PedogogikaMathP8") }}</p>
         </div>
         <div
-          class="col d-flex flex-column gap-2 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Pedogogikacard4.png" alt="" /></i>
 

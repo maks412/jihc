@@ -1,5 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg py-2" aria-label="Twelfth navbar example">
+  <div style="background-color: #0077ff;">
+  
+  <nav class="rounded-5 mx-3 bg-white navbar navbar-expand-lg py-2" aria-label="Twelfth navbar example">
     <div class="container-fluid container">
       <div class="d-flex">
         <router-link to="/" exact class="navbar-brand m-0" href="#">
@@ -30,13 +32,13 @@
               class="nav-link active d-flex align-self-center"
               style="display: list-item; align-items: center"
               aria-current="page"
-              href="mailto:info@jihc.kz"
+              href="mailto:info@jihc.edu.kz"
               ><i class="bi bi-envelope-fill h5 m-0 me-2"></i>
               <p class="m-0">
-                {{ $t("SecondNavP1") }}
+                <!-- {{ $t("SecondNavP1") }}
 
-                <br />
-                info@jihc.kz
+                <br /> -->
+                info@jihc.edu.kz
               </p></a
             >
           </li>
@@ -48,9 +50,9 @@
               href="tel:8-707-802-00-88"
               ><i class="bi bi-telephone-fill h5 m-0 me-2"></i>
               <p class="m-0">
-                {{ $t("SecondNavP2") }}
-                <br />
-                8-707-802-00-88
+                <!-- {{ $t("SecondNavP2") }}
+                <br /> -->
+                +7(707)802-00-88
               </p></a
             >
           </li>
@@ -97,6 +99,7 @@
       </div>
     </div>
   </nav>
+</div>
 </template>
 
 <script>

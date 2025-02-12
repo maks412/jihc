@@ -2,7 +2,7 @@
   <div class="mt-5 bg text-light">
     <footer class="container py-5">
       <div class="row gap-5">
-        <div class="col-6 col-md-4 mb-2">
+        <div class="col-6 col-md-9 mb-2 my-auto">
           <h5 class="mb-4">
             {{ $t("FooterH1") }}
           </h5>
@@ -10,25 +10,25 @@
             <li class="nav-item mb-2">
               <a
                 class="navbar-brand d-flex align-self-center"
-                href="mailto:info@jihc.kz"
+                href="mailto:info@jihc.edu.kz"
               >
                 <i
                   class="bi bi-envelope me-3 h3 m-0"
                   style="display: list-item; align-items: center"
                 ></i>
-                info@jihc.kz
+                info@jihc.edu.kz
               </a>
             </li>
             <li class="nav-item mb-2">
               <a
                 class="navbar-brand d-flex align-self-center"
-                href="tel:8-707-802-00-88"
+                href="tel:+7(707)802-00-88"
               >
                 <i
                   class="bi bi-telephone me-3 h3 m-0"
                   style="display: list-item; align-items: center"
                 ></i>
-                8-707-802-00-88
+                +7(707)802-00-88
               </a>
             </li>
             <li class="nav-item mb-2">

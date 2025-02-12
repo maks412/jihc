@@ -106,6 +106,8 @@ export default {
   ComandP58: "Тәрбиеші",
 
   NewsH: "Жаңалықтар",
+  hide: "Жасыру",
+  readMore: "Толығырақ",
   // AsocPage Texts
   LifePage: {
     title: "Студенттік өмір",

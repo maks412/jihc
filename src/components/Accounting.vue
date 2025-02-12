@@ -114,9 +114,9 @@
         <hr />
       </h1>
 
-      <div class="row align-items-center gap-5">
+      <div class="row align-items-center justify-content-center gap-5">
         <div
-          class="col d-flex flex-column gap-1 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Accountingcard1.png" alt="" /></i>
           <p class="fw-medium">
@@ -124,7 +124,7 @@
           </p>
         </div>
         <div
-          class="col d-flex flex-column gap-2 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Accountingcard2.png" alt="" /></i>
           <p class="fw-medium">
@@ -132,7 +132,7 @@
           </p>
         </div>
         <div
-          class="col d-flex flex-column gap-2 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Accountingcard3.png" alt="" /></i>
           <p class="fw-medium">
@@ -140,7 +140,7 @@
           </p>
         </div>
         <div
-          class="col d-flex flex-column gap-2 text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
+          class="col-3 col-md-1 d-flex flex-column text-center justify-content-center p-4 rounded-4 py-3 align-items-center mx-5"
         >
           <i class="bi"><img src="../assets/Accountingcard4.png" alt="" /></i>
 

@@ -3,7 +3,7 @@
     <h4 class="pb-2 fw-bold" style="color: #0077ff">
       {{ $t("ProfessionDesH1") }}
     </h4>
-    <div class="row pb-5 g-4 row-cols-1 row-cols-lg-3">
+    <div class="row pb-5 g-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <div
           class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2"
@@ -32,6 +32,7 @@
         </p>
       </div>
     </div>
+    
     <h4 class="pb-2 fw-bold" style="color: #0077ff">
       {{ $t("ProfessionDesH2") }}
     </h4>
@@ -41,9 +42,7 @@
       <div class="list-group">
         <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
           <img src="../assets/kz_flag.png" alt="" class="" />
-          <div
-            class="d-flex gap-2 w-100 justify-content-center align-self-center"
-          >
+          <div class="d-flex gap-2 w-100 align-self-center">
             <div>
               <h6 class="mb-0 fw-bold">
                 {{ $t("ProfessionDesP4") }}
@@ -53,9 +52,7 @@
         </div>
         <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
           <img src="../assets/ru_flag.png" alt="twbs" class="flex-shrink-0" />
-          <div
-            class="d-flex gap-2 w-100 justify-content-center align-self-center"
-          >
+          <div class="d-flex gap-2 w-100 align-self-center">
             <div>
               <h6 class="mb-0 fw-bold">
                 {{ $t("ProfessionDesP5") }}
@@ -65,9 +62,7 @@
         </div>
         <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
           <img src="../assets/tu_flag.png" alt="twbs" class="flex-shrink-0" />
-          <div
-            class="d-flex gap-2 w-100 justify-content-center align-self-center"
-          >
+          <div class="d-flex gap-2 w-100 align-self-center">
             <div>
               <h6 class="mb-0 fw-bold">
                 {{ $t("ProfessionDesP6") }}
@@ -77,7 +72,7 @@
         </div>
         <div class="list-group-item d-flex gap-3 py-3" aria-current="true">
           <img src="../assets/eng_flag.png" alt="twbs" class="flex-shrink-0" />
-          <div class="d-flex w-100 justify-content-center align-self-center">
+          <div class="d-flex w-100 align-self-center">
             <div>
               <h6 class="mb-0 fw-bold">
                 {{ $t("ProfessionDesP7") }}
@@ -87,6 +82,9 @@
         </div>
       </div>
     </div>
+
+    <!-- IT -->
+    <hr>
 
     <h4 class="pb-2 fw-bold">{{ $t("ProfessionDesH3") }}</h4>
     <p>
@@ -110,6 +108,9 @@
           <li class="list-group-item border-0">
             &#8226; {{ $t("ProfessionDesP12") }}
           </li>
+          <li class="list-group-item border-0">
+            &#8226; {{ $t("ProfessionDesP12_1") }}
+          </li>
         </ol>
       </div>
       <div class="col-md-6">
@@ -128,10 +129,15 @@
           <li class="list-group-item border-0">
             &#8226; {{ $t("ProfessionDesP16") }}
           </li>
+          <li class="list-group-item border-0">
+            &#8226; {{ $t("ProfessionDesP16_1") }}
+          </li>
         </ol>
       </div>
     </div>
-    <div class="row">
+
+    
+    <div class="row pb-5">
       <div class="col-md-8">
         <h6>
           {{ $t("ProfessionDesP17") }}<br /><br />
@@ -150,33 +156,51 @@
         >
       </div>
     </div>
+
+    <!-- Accounting -->
     <!-- #00805E -->
-    <h4 class="pb-2 fw-bold pt-5">{{ $t("ProfessionDesH6") }}</h4>
+     <hr> 
+    <h4 class="pb-2 fw-bold">{{ $t("ProfessionDesH6") }}</h4>
     <p>
       {{ $t("ProfessionDesP20") }}
-      <br /><br />
-      {{ $t("ProfessionDesP21") }}
+      <!-- <br /><br /> -->
     </p>
-    <div class="d-flex gap-3 pt-3">
-      <img src="..//assets/ACCA.png" alt="" />
-      <img
-        src="..//assets/1C.png
+    <div class="d-flex justify-content-between pb-4">
+      <div class="col-md-6">
+        <p>
+          {{ $t("ProfessionDesP21") }}
+        </p>
+        <div class="d-flex gap-3 pt-3">
+          <img src="..//assets/ACCA.png" alt="" />
+          <img
+            src="..//assets/1C.png
      "
-        alt=""
-      />
-    </div>
-    <div class="col-md-6">
-      <h5 style="color: #00805e" class="pt-3">{{ $t("ProfessionDesH5") }}</h5>
+            alt=""
+          />
+        </div>
+      </div>
 
-      <ol class="list-group list-group-unstyled">
-        <li class="list-group-item border-0">&#8226; {{ $t("ProfessionDesP22") }}</li>
-        <li class="list-group-item border-0">&#8226; {{ $t("ProfessionDesP23") }}</li>
-        <li class="list-group-item border-0">&#8226; {{ $t("ProfessionDesP24") }}</li>
-        <li class="list-group-item border-0">&#8226; {{ $t("ProfessionDesP25") }}</li>
-      </ol>
+      <div class="col-md-5">
+        <h5 style="color: #00805e" class="pt-3">{{ $t("ProfessionDesH5") }}</h5>
+
+        <ol class="list-group list-group-unstyled">
+          <li class="list-group-item border-0">
+            &#8226; {{ $t("ProfessionDesP22") }}
+          </li>
+          <li class="list-group-item border-0">
+            &#8226; {{ $t("ProfessionDesP23") }}
+          </li>
+          <li class="list-group-item border-0">
+            &#8226; {{ $t("ProfessionDesP24") }}
+          </li>
+          <li class="list-group-item border-0">
+            &#8226; {{ $t("ProfessionDesP25") }}
+          </li>
+        </ol>
+      </div>
     </div>
 
-    <div class="row pt-4">
+    <div class="row pt-4 pb-5">
       <div class="col-md-8">
         <h6>
           {{ $t("ProfessionDesP26") }}
@@ -196,7 +220,9 @@
       </div>
     </div>
 
-    <h4 class="pb-2 fw-bold pt-5">{{ $t("ProfessionDesH7") }}</h4>
+    <!-- MATH -->
+     <hr>
+    <h4 class="pb-2 fw-bold">{{ $t("ProfessionDesH7") }}</h4>
     <p>
       {{ $t("ProfessionDesP28") }} <br /><br />
       {{ $t("ProfessionDesP29") }}

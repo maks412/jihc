@@ -12,6 +12,7 @@
   <div class="main-app">
     <Navbar v-if="showElem" />
     <combined v-if="showElem" />
+    
     <main class="flex justify-center items-center max-w-lg mx-auto w-full">
       <RouterView />
     </main>
@@ -23,6 +24,7 @@
 import Navbar from "./components/Navbar.vue";
 import Combined from "./components/Combined.vue";
 import MyFooter from "./components/MyFooter.vue";
+
 
 export default {
   name: "App",
