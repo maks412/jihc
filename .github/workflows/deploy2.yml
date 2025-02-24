@@ -1,0 +1,32 @@
+name: Deploy Vue App
+
+on:
+  push:
+    branches:
+      - main  # Adjust if needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Setup SSH Connection
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+    - name: Deploy to Server
+      run: |
+        ssh ubuntu@${{ secrets.SSH_HOST }} << 'EOF'
+          cd ${{ secrets.WORK_DIR }}  # Adjust path
+          git pull origin main
+          npm install
+          npm run build
+          pm2 restart vue-app  # If using PM2, otherwise adjust as needed
+          sudo systemctl restart nginx  # Restart Nginx
+        EOF
