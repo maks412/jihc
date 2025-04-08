@@ -129,6 +129,7 @@ DocumentP11: "Service 2",
 DocumentP12: "Service 3",
 DocumentP13: "Service 4",
 DocumentP14: "Academic Quality Regulations",
+DocumentP15: "Public service",
 
 // Association Page Texts
 AssocPage: {

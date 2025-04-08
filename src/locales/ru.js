@@ -126,6 +126,7 @@ export default {
   DocumentP12: "Cервис 3",
   DocumentP13: "Cервис 4",
   DocumentP14: "Положение об академическом качестве",
+  DocumentP15: "Государственная служба",
 
   // AsocPage Texts
   AssocPage: {

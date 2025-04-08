@@ -136,6 +136,7 @@ export default {
   DocumentP12: "3 қызмет",
   DocumentP13: "4 қызмет",
   DocumentP14: "Академиялық сапа ережелері",
+  DocumentP15: "Мемлекеттік қызмет көрсету",
 
   // AsocPage Texts
   AssocPage: {

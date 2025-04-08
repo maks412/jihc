@@ -165,6 +165,14 @@
         {{ $t("DocumentP14") }}
       </a>
     </div>
+    <div class="link-container mb-3">
+      <a
+        href="https://docs.google.com/document/d/1kmAZMJGkKnzqCmwPFkCyuq6L3xkWHWlWAcRZQIbX_tE/edit?usp=sharing"
+        class="link-item"
+      >
+        {{ $t("DocumentP15") }}
+      </a>
+    </div>
   </div>
 </template>
 
