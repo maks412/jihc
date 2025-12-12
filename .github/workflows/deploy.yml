@@ -1,24 +1,42 @@
-name: Deploy Vue App
+name: Deploy to jihc.edu.kz
 
 on:
   push:
     branches:
-      - main  # Change to your branch if needed
+      - main  # or your main branch
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Deploy to Server
-      run: |
-        ssh ubuntu@${{ secrets.SSH_HOST }} << 'EOF'
-          cd {{secrets.WORK_DIR}}  # Change to your Vue project path
-          git pull origin main
-          npm install
-          npm run build
-          pm2 restart vue-app  # If you're using PM2, otherwise use systemctl
-        EOF
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+        # or: npm install
+
+      - name: Build Vue app
+        run: npm run build
+
+      - name: Start SSH agent and add key
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_KEY }}
+
+      - name: Deploy built files to server via rsync
+        run: |
+          rsync -avz --delete \
+            dist/ \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/jihc
+
+      - name: Reload nginx on server
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "sudo systemctl reload nginx"
