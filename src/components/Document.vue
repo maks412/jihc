@@ -61,7 +61,7 @@
     </div>
     <div class="link-container mb-3">
       <a
-        href="https://docs.google.com/document/d/1_POVHmkCqyv072Fcuf1oqLQ08d0ot5Gl/edit?usp=sharing&ouid=106749311590716813947&rtpof=true&sd=true"
+        href="https://drive.google.com/drive/folders/1b2F1SrZ0jBNTT_uaSGHp2RicJfkIkphK?usp=sharing"
         class="link-item"
       >
         {{ $t("DocumentP8") }}
