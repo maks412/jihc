@@ -2,31 +2,26 @@ name: Deploy to jihc.edu.kz
 
 on:
   push:
-    branches:
-      - main  # or your main branch
+    branches: [ "main" ]   # change if your branch is different
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
-      - name: Install dependencies
+      - name: Install
         run: npm ci
-        # or: npm install
 
-      - name: Build Vue app
+      - name: Build
         run: npm run build
 
-      - name: Start SSH agent and add key
+      - name: Start SSH agent
         uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_KEY }}
@@ -36,12 +31,11 @@ jobs:
           mkdir -p ~/.ssh
           ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy built files to server via rsync
+      - name: Deploy dist via rsync
         run: |
-          rsync -avz --delete \
-            dist/ \
-            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/jihc
+          rsync -avz --delete dist/ \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/jihc/
 
-      - name: Reload nginx on server
+      - name: Reload nginx
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "sudo systemctl reload nginx"
